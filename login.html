@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+   
+    <link rel="stylesheet" href="assets/css/main2.css">  <!-- Puedes incluir un archivo CSS para estilos -->
+    <script src="login.js" defer></script> <!-- Usa defer para asegurar que el DOM esté cargado -->
+</head>
+<body>
+    <center>
+    <h2>Iniciar Sesión</h2>
+    <form id="loginForm">
+        <label for="username">Usuario:</label>
+        <input type="text" id="username" required>
+        <br><br>
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" required>
+        <br><br>
+        <button type="submit" id="boton1" value="boton1">Iniciar Sesión</button>
+    </form>
+    <p id="message" style="color: red;"></p> <!-- Estilo para el mensaje de error -->
+
+    <h2>Registrar Usuario</h2>
+    <form id="registerForm">
+        <label for="newUsername">Nuevo Usuario:</label>
+        <input type="text" id="newUsername" required>
+        <br><br>
+        <label for="newPassword">Nueva Contraseña:</label>
+        <input type="password" id="newPassword" required>
+        <br><br>
+        <button type="submit" id="boton2" value="boton2">Registrar</button>
+    </form>
+    <p id="registerMessage" style="color: red;"></p> <!-- Estilo para el mensaje de registro -->
+</center>
+</body>
+</html>
